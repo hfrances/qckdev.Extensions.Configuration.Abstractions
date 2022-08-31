@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qckdev.Extensions.Configuration.Abstractions", "qckdev.Extensions.Configuration.Abstractions\qckdev.Extensions.Configuration.Abstractions.csproj", "{0A09CBB0-0F5A-476B-92CD-45FE8C8275A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "qckdev.Extensions.Configuration.Abstractions.Test", "qckdev.Extensions.Configuration.Abstractions.Test\qckdev.Extensions.Configuration.Abstractions.Test.csproj", "{024540FA-5D7B-4FF8-B69E-999F75F9E4A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0A09CBB0-0F5A-476B-92CD-45FE8C8275A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A09CBB0-0F5A-476B-92CD-45FE8C8275A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A09CBB0-0F5A-476B-92CD-45FE8C8275A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A09CBB0-0F5A-476B-92CD-45FE8C8275A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{024540FA-5D7B-4FF8-B69E-999F75F9E4A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{024540FA-5D7B-4FF8-B69E-999F75F9E4A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{024540FA-5D7B-4FF8-B69E-999F75F9E4A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{024540FA-5D7B-4FF8-B69E-999F75F9E4A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B80EB1FE-07DD-4084-8A59-7BED5A0B6ABB}
+	EndGlobalSection
+EndGlobal
