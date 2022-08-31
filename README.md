@@ -11,7 +11,7 @@ Provides some utilities for Microsoft.Extensions.Configuration.Abstractions.
 ``` cs
 
     using Microsoft.Extensions.Configuration;
-	using qckdev.Extensions.Configuration.Abstractions;
+    using qckdev.Extensions.Configuration.Abstractions;
 
     class Startup
     {
