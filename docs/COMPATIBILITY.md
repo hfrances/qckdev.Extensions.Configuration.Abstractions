@@ -142,11 +142,42 @@ If you're using EOL frameworks (.NET Core 3.1):
 - ⚠️ Consider migrating to .NET 8.0 (LTS) for continued support
 - ✅ This package provides compatibility support for this framework
 
+## Known Issues and Solutions
+
+### Issue: Unit Tests Failing for .NET 10.0
+
+**Problem**: When adding .NET 10.0 as a target framework, unit tests would fail with exit code 1 despite 100% code coverage being collected.
+
+**Root Cause**: The test project was using outdated versions of testing frameworks that did not fully support .NET 10.0:
+- Microsoft.NET.Test.Sdk 17.1.0 (January 2022)
+- MSTest.TestAdapter 2.2.8 (January 2022)
+- MSTest.TestFramework 2.2.8 (January 2022)
+- coverlet.msbuild 3.1.2 (December 2021)
+- coverlet.collector 3.1.2 (December 2021)
+
+VSTest would compile for net10.0 but fail to execute tests on that framework due to incompatibility.
+
+**Solution**: Updated testing framework dependencies to versions with full .NET 10.0 support:
+- Microsoft.NET.Test.Sdk → 17.11.1 ✅
+- MSTest.TestAdapter → 3.2.2 ✅
+- MSTest.TestFramework → 3.2.2 ✅
+- coverlet.msbuild → 6.0.0 ✅
+- coverlet.collector → 6.0.0 ✅
+
+These updated versions maintain backward compatibility with netcoreapp3.1, net5.0, and net6.0 while adding proper support for net10.0.
+
+**Pipeline Updates**: 
+- Updated `reportgenerator` task from v4 to v5 for improved .NET 10.0 support
+- Added `publishTestResults: true` to DotNetCoreCLI@2 test task to properly publish TRX results to Azure Pipelines
+- These changes do not affect the OpenCover format or SonarCloud integration
+
 ## Additional Resources
 
 - [Microsoft .NET Support Policy](https://dotnet.microsoft.com/platform/support/policy)
 - [Microsoft.Extensions.Configuration on NuGet](https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Abstractions)
 - [NuGet Package Vulnerabilities](https://github.com/advisories?query=ecosystem%3Anuget)
+- [MSTest Documentation](https://docs.microsoft.com/en-us/dotnet/core/testing/)
+- [Coverlet Documentation](https://github.com/coverlet-coverage/coverlet)
 
 ## Last Updated
 
