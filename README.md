@@ -1,7 +1,7 @@
-<a href="https://www.nuget.org/packages/qckdev.Extensions.Configuration.Abstractions"><img src="https://img.shields.io/nuget/v/qckdev.Extensions.Configuration.Abstractions.svg" alt="NuGet Version"/></a>
-<a href="https://sonarcloud.io/dashboard?id=qckdev.Extensions.Configuration.Abstractions"><img src="https://sonarcloud.io/api/project_badges/measure?project=qckdev.Extensions.Configuration.Abstractions&metric=alert_status" alt="Quality Gate"/></a>
-<a href="https://sonarcloud.io/dashboard?id=qckdev.Extensions.Configuration.Abstractions"><img src="https://sonarcloud.io/api/project_badges/measure?project=qckdev.Extensions.Configuration.Abstractions&metric=coverage" alt="Code Coverage"/></a>
-<a><img src="https://hfrances.visualstudio.com/qckdev/_apis/build/status/qckdev.Extensions.Configuration.Abstractions?branchName=master" alt="Azure Pipelines Status"/></a>
+[![NuGet Version](https://img.shields.io/nuget/v/qckdev.Extensions.Configuration.Abstractions.svg)](https://www.nuget.org/packages/qckdev.Extensions.Configuration.Abstractions)
+[![Quality Gate](https://sonarcloud.io/api/project_badges/measure?project=qckdev.Extensions.Configuration.Abstractions&metric=alert_status)](https://sonarcloud.io/dashboard?id=qckdev.Extensions.Configuration.Abstractions)
+[![Code Coverage](https://sonarcloud.io/api/project_badges/measure?project=qckdev.Extensions.Configuration.Abstractions&metric=coverage)](https://sonarcloud.io/dashboard?id=qckdev.Extensions.Configuration.Abstractions)
+![Azure Pipelines Status](https://hfrances.visualstudio.com/qckdev/_apis/build/status/qckdev.Extensions.Configuration.Abstractions?branchName=master)
 
 
 # qckdev.Extensions.Configuration.Abstractions
@@ -39,3 +39,9 @@ Provides some utilities for Microsoft.Extensions.Configuration.Abstractions.
     }
     
 ```
+
+## 🤝 Contributing
+Issues and pull requests are welcome! See the contribution guidelines (coming soon).
+
+## 📜 License
+This project is licensed under the terms of the [MIT License](LICENSE).
