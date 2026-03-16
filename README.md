@@ -8,6 +8,14 @@
 
 Provides some utilities for Microsoft.Extensions.Configuration.Abstractions.
 
+## 🛠️ Installation
+
+```bash
+dotnet add package qckdev.Extensions.Configuration.Abstractions
+```
+
+## ⚡ Quick Start
+
 ``` cs
 
     using Microsoft.Extensions.Configuration;
